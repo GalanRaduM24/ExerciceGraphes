@@ -8,8 +8,8 @@ using namespace std;
 template<typename TnodeInfo, typename TedgeInfo>
 class Graph {
 public:
-    int N;//numar de noduri
-    char** A;//matrice
+    int N;//number of nodes
+    char** A;//matrix of adjacency
     TnodeInfo* nodeInfo;
     TedgeInfo** edgeInfo;
 
@@ -18,7 +18,7 @@ public:
 
         N = numNodes;
 
-        // allocation de la matrice d'adjacence
+        // allocation of the adjacency matrix
         A = new char* [N];
         for (i = 0; i < N; i++)
             A[i] = new char[N];
@@ -27,10 +27,10 @@ public:
             for (j = 0; j < N; j++)
                 A[i][j] = 0;
 
-        // allocation de l'info des noeuds
+        // allocation of the array with the info of the nodes
         nodeInfo = new TnodeInfo[N];
 
-        // allocation de la matrice avec l'info des aretes
+        // allocation of the matrix with the info of the edges
         edgeInfo = new TedgeInfo * [N];
         for (i = 0; i < N; i++)
             edgeInfo[i] = new TedgeInfo[N];
