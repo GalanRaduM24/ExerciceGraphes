@@ -44,7 +44,7 @@ The code performs the following steps:
 4. Output Result:
     - Writes the sorted sequence to index.out.txt.
 5. Key Functions
-    - dfs(int x): A recursive function for performing depth-first search on the graph.
-    - topologicSort(int x): A recursive function for performing topological sort on the graph.
-    - comparareLitere(int n, string v[]): Compares characters of consecutive words and builds the graph.
-    - main(): The main function that orchestrates reading input, building the graph, performing topological sort, and writing the output.
+    - `dfs(int x)`: A recursive function for performing depth-first search on the graph.
+    - `topologicSort(int x)`: A recursive function for performing topological sort on the graph.
+    - `compareLetters(int n, string v[])`: Compares characters of consecutive words and builds the graph.
+    - `main()`: The main function that orchestrates reading input, building the graph, performing topological sort, and writing the output.
